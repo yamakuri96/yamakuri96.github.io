@@ -1,0 +1,125 @@
+@charset "utf-8";
+html {
+  height:100%;
+  width:1000px;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.header {
+  margin:0px;
+  padding:0px;
+  width: 100%;
+  height: auto;
+}
+
+.header h1 {
+  padding:0px;
+  margin:0px;
+}
+
+.content {
+  background: #f5ddca;
+  padding: 10px;
+}
+
+.content h2 {
+ border-bottom: 5px solid #c63476;
+ margin: 10px;
+ margin-top:30px;
+ margin-bottom:15px;
+ padding-left:15px;
+ color: #111;
+}
+
+.content p {
+  font-family: 'Kosugi Maru', sans-serif;
+  margin: 10px;
+  color: #444;
+  padding-left: 1.5em;
+  text-indent: 1em;
+  line-height: 1.5em;
+}
+
+.hooder {
+  text-align: center;
+  padding:10px;
+  margin-top:0px;
+  background:#db526d;
+  color:#fff;
+}
+
+.SNS li {
+  list-style:none;
+  margin-left:4em;
+}
+
+.SNS li a {
+  text-decoration:none;
+  background: #eee;
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  max-width: 280px;
+  padding: 10px 25px;
+  color: #313131;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.SNS li a:hover {
+  background: #313131;
+  color: #FFF;
+}
+
+.SNS li a:after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #313131;
+  border-right: 3px solid #313131;
+  transform: rotate(45deg) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  border-radius: 1px;
+  transition: 0.3s ease-in-out;
+}
+
+.SNS li a:hover:after {
+  border-color: #FFF;
+}
+
+@media screen and (max-width: 999px) {
+	/* 999px以下に適用されるCSS（スマホ用） */
+  html {
+    width:auto;
+  }
+
+  body {
+    margin:0 0;
+  }
+
+  .content {
+    padding: 10px 0;
+  }
+
+  .content p {
+    padding-left: 1em;
+  }
+
+  .content h2 {
+    padding-left:0.3em;
+  }
+
+  .SNS li {
+    margin:0 auto;
+  }
+
+  .SNS li a{
+    margin:0 auto;
+  }
+}
+
