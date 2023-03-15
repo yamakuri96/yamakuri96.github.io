@@ -61,7 +61,6 @@ html {
   border-radius: 3px;
   position: relative;
   display: flex;
-  justify-content: space-around;
   max-width: 280px;
   padding: 10px 25px;
   color: #313131;
@@ -93,7 +92,7 @@ html {
 }
 
 @media screen and (max-width: 999px) {
-	/* 999pxˆÈ‰º‚É“K—p‚³‚ê‚éCSSiƒXƒ}ƒz—pj */
+	/* 999pxä»¥ä¸‹ã«é©ç”¨ã•ã‚Œã‚‹CSSï¼ˆã‚¹ãƒãƒ›ç”¨ï¼‰ */
   html {
     width:auto;
   }
